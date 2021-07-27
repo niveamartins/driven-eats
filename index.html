@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./src/styles/reset.css" />
     <link rel="stylesheet" href="./src/styles/global.css" />
+    <script src="./src/scripts/script.js"></script>
     <title>Driven Eats</title>
   </head>
 
@@ -23,8 +24,8 @@
 
     <div class="content">
       <h3>Primeiro, seu prato</h3>
-      <div class="menu-options">
-        <div class="option">
+      <div class="principal menu-options">
+        <div class="option" onclick="selectOption('principal', this)">
           <div class="option-picture">
             <img src="./src/assets/img/yakisoba.jpg" alt="" />
           </div>
@@ -38,7 +39,7 @@
           </div>
         </div>
 
-        <div class="option">
+        <div class="option" onclick="selectOption('principal', this)">
           <div class="option-picture">
             <img src="./src/assets/img/sashimi.jpg" alt="" />
           </div>
@@ -51,7 +52,7 @@
           </div>
         </div>
 
-        <div class="option">
+        <div class="option" onclick="selectOption('principal', this)">
           <div class="option-picture">
             <img src="./src/assets/img/harumaki.jpg" alt="" />
           </div>
@@ -64,7 +65,7 @@
           </div>
         </div>
 
-        <div class="option">
+        <div class="option" onclick="selectOption('principal', this)">
           <div class="option-picture">
             <img src="./src/assets/img/temaki.jpg" alt="" />
           </div>
@@ -77,7 +78,7 @@
           </div>
         </div>
 
-        <div class="option">
+        <div class="option" onclick="selectOption('principal', this)">
           <div class="option-picture">
             <img src="./src/assets/img/barca.jpg" alt="" />
           </div>
@@ -93,8 +94,8 @@
 
       <h3>Agora, sua bebida</h3>
 
-      <div class="menu-options">
-        <div class="option">
+      <div class="drink menu-options">
+        <div class="option" onclick="selectOption('drink', this)">
           <div class="option-picture">
             <img src="./src/assets/img/agua.jpg" alt="" />
           </div>
@@ -107,7 +108,7 @@
           </div>
         </div>
 
-        <div class="option">
+        <div class="option" onclick="selectOption('drink', this)">
           <div class="option-picture">
             <img src="./src/assets/img/cha-gelado.jpg" alt="" />
           </div>
@@ -120,7 +121,7 @@
           </div>
         </div>
 
-        <div class="option">
+        <div class="option" onclick="selectOption('drink', this)">
           <div class="option-picture">
             <img src="./src/assets/img/coca.jpg" alt="" />
           </div>
@@ -133,7 +134,7 @@
           </div>
         </div>
 
-        <div class="option">
+        <div class="option" onclick="selectOption('drink', this)">
           <div class="option-picture">
             <img src="./src/assets/img/suco.jpg" alt="" />
           </div>
@@ -152,8 +153,8 @@
 
       <h3>Por fim, sua sobremesa</h3>
 
-      <div class="menu-options">
-        <div class="option">
+      <div class="dessert menu-options">
+        <div class="option" onclick="selectOption('dessert', this)">
           <div class="option-picture">
             <img src="./src/assets/img/dorayaki.jpg" alt="" />
           </div>
@@ -166,7 +167,7 @@
           </div>
         </div>
 
-        <div class="option">
+        <div class="option" onclick="selectOption('dessert', this)">
           <div class="option-picture">
             <img src="./src/assets/img/daifuku.jpg" alt="" />
           </div>
@@ -179,7 +180,7 @@
           </div>
         </div>
 
-        <div class="option">
+        <div class="option" onclick="selectOption('dessert', this)">
           <div class="option-picture">
             <img src="./src/assets/img/taiyaki.jpg" alt="" />
           </div>
@@ -192,7 +193,7 @@
           </div>
         </div>
 
-        <div class="option">
+        <div class="option" onclick="selectOption('dessert', this)">
           <div class="option-picture">
             <img src="./src/assets/img/warabi.jpg" alt="" />
           </div>
@@ -205,7 +206,7 @@
           </div>
         </div>
 
-        <div class="option">
+        <div class="option" onclick="selectOption('dessert', this)">
           <div class="option-picture">
             <img src="./src/assets/img/wagashi.jpg" alt="" />
           </div>
@@ -222,7 +223,7 @@
     </div>
 
     <div class="footer">
-      <button class="button-disabled" disabled>
+      <button class="button disabled" disabled>
         Selecione os 3 itens para fechar o pedido
       </button>
     </div>
